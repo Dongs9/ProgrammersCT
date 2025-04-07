@@ -28,7 +28,7 @@ int solution(vector<int> queue1, vector<int> queue2) {
     if ((result_q1 + result_q2) & 1)
         return -1;
 
-    int max_sequence = q1.size() + q2.size() + q1.size() + q2.size();
+    int max_sequence = q1.size() + q2.size() + q1.size();
     int sequence = 0;
     while (true)
     {
