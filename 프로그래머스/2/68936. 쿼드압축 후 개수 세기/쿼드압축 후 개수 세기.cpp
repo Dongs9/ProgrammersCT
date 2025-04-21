@@ -23,18 +23,12 @@ struct Result
 
         result_one += result.result_one;
         result_zero += result.result_zero;
-
-        before_one += result.before_one;
-        before_zero += result.before_zero;
     }
 
     void Zip()
     {
         if (one == count)
-        {
-            before_one = one;
             result_one = 1;
-        }
         else
         {
             if (0 == result_one)
@@ -42,10 +36,7 @@ struct Result
         }
         
         if (zero == count)
-        {
-            before_zero = zero;
             result_zero = 1;
-        }
         else
         {
             if (0 == result_zero)
@@ -55,9 +46,6 @@ struct Result
 
     int one = 0;
     int zero = 0;
-
-    int before_one = 0;
-    int before_zero = 0;
 
     int result_one = 0;
     int result_zero = 0;
